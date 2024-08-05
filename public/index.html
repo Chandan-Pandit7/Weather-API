@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="mytheme" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">My Weather App</h1>
+
+        <!-- Search box starts -->
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Enter City Name">
+            <!-- <button class="search-btn"><img src="./img/search.png"></button> -->
+            
+             <button type="submit" class="btn">Search</button>
+        </div>
+
+        <div class="error1">
+            <p>Invalid City Name</p>
+        </div>
+        <!-- search box ends -->
+
+
+
+
+
+        <!-- Details Starts -->
+        <div class="details">
+            <div class="weather-img-box">
+                <img src="./img/clear.png" class="weather-img">
+            </div>
+            <h1 class="temp">22°C</h1>
+            <h1 class="main">Haze</h1>
+            <h2 class="dateAPI">12 April 2024</h2>
+            <h2 class="time">12:00m</h2>
+            <h2 class="day">firday</h2>
+            <h1 class="cityName">Bengaluru</h1>
+
+            <div class="weather-details">
+                <div class="type">
+                    <img src="./img/humidity.png" alt="" class="typeImage">
+                    <h1 class="typeNumber">53%</h1>
+                    <div>
+                        <h3 class="typeText">Humidity</h3>
+                    </div> 
+                </div>
+
+                <div class="speed">
+                    <img src="./img/wind.png" alt="" class="windSpeedImage">
+                    <h1 class="windSpeed">5.66km/h</h1>
+                    <div>
+                        <h3 class="WindSpeedText">Wind Speed</h3>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Details ends -->
+
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
